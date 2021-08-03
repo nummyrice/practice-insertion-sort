@@ -27,10 +27,11 @@ function insertionSort(arr) {
         // If so, you've reached the insertion point so exit the loop
         // If not shift the value to the right by 1 and continue
     for (let i = sorted.length - 2; i >= 0; i--) {
-      if (!sorted[i] < val) {
+
+      if (!(sorted[i] < val)) {
         sorted[i + 1] = sorted[i];
       } else {
-        insertionPt = i;
+        insertionPt = i + 1;
         break;
       }
       debugger;
